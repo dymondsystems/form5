@@ -524,16 +524,49 @@ max-width: px;
       <li class="nav-item">
       
       
-       <a class="nav-link" href="#" data-toggle="dropdown">Alerts <span class="badge badge-light">4</span></a>
+       <a class="nav-link" href="#" data-toggle="dropdown"><i class="fa fa-bell"></i><span class="badge badge-danger"> 3</span></a>
 
      
     <div class="dropdown">
-    <div class="dropdown-menu" style="right:0; left: auto;">
-      <a class="dropdown-item" data-toggle="modal" href="#accountinfo"><i class="fa fa-bell"></i> Welcome to stack board!</a>
+    <div class="dropdown-menu" style="right:0; left: auto; font-size:12px;">
+    
+    
+    <a class="dropdown-item" style="color:; font-size:20px;" data-toggle="modal" href="#createaccount"><i class="fa fa-bell"></i> Alert center</a>
+      
       <hr>
-      <a class="dropdown-item" data-toggle="modal" href="#createaccount">Edit category</a>
-      <hr>
-      <a class="dropdown-item" style="color:red;" data-toggle="modal" href="#createaccount">Remove from stack</a>
+    
+    
+    
+    
+      <a class="dropdown-item" data-toggle="modal" href="#accountinfo">
+     
+      <img class="lib-img-show" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/1200px-Google_%22G%22_logo.svg.png" alt="HTML tutorial" style="width:25px;height:25px; margin-right: 10px;"> Welcome to stack board!</a>
+     
+     
+     <hr>
+    
+    
+    
+    
+      <a class="dropdown-item" data-toggle="modal" href="#accountinfo">
+     
+      <img class="lib-img-show" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/1200px-Google_%22G%22_logo.svg.png" alt="HTML tutorial" style="width:25px;height:25px; margin-right: 10px;"> Welcome to stack board!</a>
+     
+     
+     
+     
+     <hr>
+    
+    
+    
+    
+      <a class="dropdown-item" data-toggle="modal" href="#accountinfo">
+     
+      <img class="lib-img-show" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/1200px-Google_%22G%22_logo.svg.png" alt="HTML tutorial" style="width:25px;height:25px; margin-right: 10px;"> Welcome to stack board!</a>
+      
+      
+       <hr>
+      <center><a class="dropdown-item" style="color:blue;" data-toggle="modal" href="#createaccount">View all</a></center>
     </div>
 </div>
       
