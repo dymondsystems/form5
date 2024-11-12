@@ -1670,15 +1670,18 @@ function tumblr() {
         <!-- Modal body -->
         <div class="modal-body">
         <div class="container">
-  more
-  <!-- note pad open button -->
-  <button type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#notepad"><i class="fa fa-sticky-note-o"></i>
-    Note pad
-  </button>
   
   <!-- note pad open button -->
-  <button type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#game1"><i class="fa fa-sticky-note-o"></i>
-    Note pad2
+  <button type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#notes"><i class="fa fa-sticky-note-o"></i>
+    Note pad
+  </button>
+  <br>
+  <hr>
+  <br>
+  
+  <!-- note pad open button -->
+  <button type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#chat"><i class="fa fa-sticky-note-o"></i>
+    Chat
   </button>
   
 
@@ -1695,6 +1698,182 @@ function tumblr() {
   </div>
   
 </div>
+  
+  
+ <!-- End tools modal-->
+ 
+ 
+ 
+ 
+ 
+ <!--start notes modal-->
+   
+  <div class="modal" id="notes">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Note pad</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+        	<div class="container">
+            
+       
+            
+            
+            
+            
+            
+            
+            <form>
+    <div class="form-group">
+      <label for="comment">Keep notes here</label>
+      
+      <textarea style="width:100%" rows="1" cols="50" name="t3" id="output1" placeholder="Click (create) and copy code when done">
+</textarea>
+      
+      
+      
+      <button type="button" class='btn btn-warning pushme2 with-color' onclick="myFunction()">Copy</button>
+    </div>
+  </form>
+  
+            
+            
+            
+  
+  <form>
+    <div class="form-group">
+      <label for="comment">Keep notes here</label>
+      
+      <textarea style="width:100%" rows="15" cols="50" name="t3" id="output1" placeholder="Click (create) and copy code when done">
+</textarea>
+      
+      
+      
+      <button type="button" class='btn btn-primary pushme2 with-color2' onclick="myFunction()">Copy</button>
+      
+      <input type="button" class='btn btn-danger' name="reset_form" value="Reset / clear" onclick="this.form.reset();" style="background-color:red; color:white;">
+    </div>
+  </form>
+</div>
+
+        
+        
+        
+        
+        
+  <form>
+    <div class="form-group">
+      <label for="comment">Add URL</label>
+      
+      <textarea style="width:100%" rows="1" cols="50" name="t3" id="output1" placeholder="Click (create) and copy code when done">
+</textarea>
+      
+      
+      
+      <button type="button" class='btn btn-warning pushme2 with-color' onclick="myFunction()">Copy</button>
+    </div>
+  </form>
+  
+  
+  <button type="button" class="btn btn-success pushme3 with-color" data-toggle="collapse" data-target="#demo">Add another</button>
+  <div id="demo" class="collapse">
+  
+ <form>
+    <div class="form-group">
+      <label for="comment">Add URL</label>
+      
+      <textarea style="width:100%" rows="1" cols="50" name="t3" id="output1" placeholder="Click (create) and copy code when done">
+</textarea>
+      
+      
+      
+      <button type="button" class='btn btn-warning pushme2 with-color' onclick="myFunction()">Copy</button>
+    </div>
+  </form>
+  
+  
+  
+  
+  
+  
+  
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo1">Add another</button>
+  <div id="demo1" class="collapse">
+    <form>
+    <div class="form-group">
+      <label for="comment">Max URL's</label>
+      
+      <textarea style="width:100%" rows="1" cols="50" name="t3" id="output1" placeholder="Click (create) and copy code when done">
+</textarea>
+      
+      
+      
+      <button type="button" class='btn btn-warning pushme2 with-color' onclick="myFunction()">Copy</button>
+    </div>
+  </form>
+        
+        
+        
+        </div>
+        </div>
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+</div>
+ 
+ <!--End notes modal-->
+ 
+ 
+ <!--Start chat modal-->
+ 
+
+  <div class="modal" id="chat">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content" style= "background-color:#242424;">
+      
+        <!-- Modal Header -->
+        <div class="modal-header bg-dark">
+          <h4 class="modal-title">Help</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body ">
+        
+  <iframe src="https://dymond.systems/bot2"  width="100%;" height="750px;" frameBorder="0;">
+        </iframe>
+
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer bg-dark">
+        
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+          <br>
+          
+          
+        </div>
+        <div class="bg-dark">
+        <p>If you need more help try <a href="#">ChatGPT</a></p>
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+<!-- End chat modal-->
   
   
   
@@ -2078,7 +2257,7 @@ document.addEventListener("DOMContentLoaded",
 
 <script>
 function gmb() {
-  window.open("https://google.com", "_blank", "toolbar=no,scrollbars=yes,resizable=yes,top=160,left=200,width=1000,height=500");
+  window.open("https://www.google.com/search?q=gmbsrc=&stick=H4sIAAAAAAAA_-NgU1IxqLCwMDVOMUxKNUtNNU0zNEqyMqgwMzYwMzVJMzYxSzNINk9axMrnUpmbn5eiUFxZXJKaWwwA9X3h3zkAAAA&hl=en&mat=CfawGeevhG8XElYBqiIDwjh4go1kxbfCGX9NORgZGbOTD2O4JIah92gahpIvmGGB6xMRTf2t281KtxFR__vD2Thrl7R3Dp3zuoCKKZXkkraWCMNfoN6_fo05VGFzEuTYYA&authuser=0#mpd=editprofile/info", "_blank", "toolbar=no,scrollbars=yes,resizable=yes,top=160,left=200,width=1000,height=500");
   
 }
 
