@@ -567,6 +567,33 @@ max-width: px;
 
 
 <div class="jumbotron">
+
+
+
+
+<div class="alert alert-danger alert-dismissible fade show d-sm-none">
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+    <strong>ATTENTION!</strong> Although stack board works on mobile, it is best used on larger screens for production. To try stack board now, simply close and ignore this message.
+    <br>
+    <br>
+    
+    For the best version we can send you a link to access from a larger screen
+    <br>
+    
+    <br>
+    <!-- Development -->
+  <center><a class="btn btn-success btn-sm" href="#development"><i class="fa fa-chain"></i>
+    Send link
+  </a> </center>
+  
+  
+  </div>
+
+
+
+
+
+
 Jump to boards
 <div class="button sticky-top" style="z-index: 1;">
  <!-- Development -->
@@ -574,6 +601,7 @@ Jump to boards
     Development
   </a> 
   
+
   
   <!-- marketing and design -->
   <a href="#" type="button" class="btn btn-primary btn-lg "  data-target="#marketing"><i class="fa fa-bullhorn"></i>
