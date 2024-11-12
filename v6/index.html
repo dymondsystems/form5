@@ -668,22 +668,23 @@ Jump to boards
   
   
   <!-- note pad open button -->
-  <button type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#notepad"><i class="fa fa-sticky-note-o"></i>
-    Note pad
+  <button type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#notepad"><i class="fa fa-share-alt"></i>
+    Networking
   </button>
   
   
    <!-- More -->
-  <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#chat"><i class="fa fa-plus"></i>
+  <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#morestacks"><i class="fa fa-plus"></i>
    More
   </button> 
   
  <!--  tools open button -->
-  <button type="button" style="position:fixed;bottom:5px;right:5px;margin:0;padding:5px 3px;" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#more"><i class="fa fa-wrench"></i>
+  <button type="button" style="position:fixed;bottom:5px;right:5px;margin:0;padding:5px 3px;" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#tools"><i class="fa fa-wrench"></i>
    Tools
   </button>
 </div>
 <br>
+<hr>
 <h3>Profile stack</h3>
 <br>
 
@@ -728,42 +729,84 @@ Jump to boards
         
        
         
-        <div class="col-md-3">
-            <div class="card border-danger mx-sm-1 p-3">
-                <div class="card border-danger shadow text-danger p-3 my-card" ><span class="fa fa-play" aria-hidden="true"></span></div>
-               
-                <div class="text-danger text-center mt-3"><h4>Video</h4></div>
-                <div class="text-danger text-center mt-2"><p>Upload videos</p>
+    <!-- start angi card -->
+     <div class="col-md-3">
+            <div class="card border-success mx-sm-1 p-3">
+            
+            <div class="dropdown">
+            
+            <i class="fa fa-ellipsis-h" aria-hidden="true" data-toggle="dropdown" style="float: right;"></i>
+    
+    <div class="dropdown-menu">
+      <a class="dropdown-item" data-toggle="modal" href="#accountinfo">Add account info</a>
+      <a class="dropdown-item" data-toggle="modal" href="#createaccount">Edit category</a>
+      <a class="dropdown-item" style="color:red;" data-toggle="modal" href="#createaccount">Remove from stack</a>
+    </div>
+</div>
+            
+                <div class="card border-success shadow text-success p-3 my-card"><img class="lib-img-show" src="https://logosandtypes.com/wp-content/uploads/2021/04/Angi.png" alt="HTML tutorial" style="width:25px;height:25px;"></div>
                 <br>
-            <br>
-            <br>
+               
+                   <div class="text-success text-center mt-2"><h4>Angi</h4></div>
+                <div class="text-success text-center mt-2"><p>Use Angi my business to control you online google presence</p>   
+          
+              
+              
+              
+              <button onclick="angi()" class="btn btn-primary" role="button" data-toggle="modal" data-target="#screencover">Open</button>
+         
+          
            
-           
-          <!-- note pad open button -->
-  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#video">
-    Open
-  </button>
                 </div>
             </div>
         </div>
         
         
-        <div class="col-md-3">
-            <div class="card border-warning mx-sm-1 p-3">
-                <div class="card border-warning shadow text-warning p-3 my-card" ><span class="fa fa-briefcase" aria-hidden="true"></span></div>
-                <div class="text-warning text-center mt-3"><h4>Business sites</h4></div>
-                <div class="text-warning text-center mt-2"><p>Build a business presence</p>
+        
+    
+    <!--END angi card-->
+        
+        
+    <!-- start houzz card-->
+    
+    
+     <div class="col-md-3">
+            <div class="card border-success mx-sm-1 p-3">
+            
+            <div class="dropdown">
+            
+            <i class="fa fa-ellipsis-h" aria-hidden="true" data-toggle="dropdown" style="float: right;"></i>
+    
+    <div class="dropdown-menu">
+      <a class="dropdown-item" data-toggle="modal" href="#accountinfo">Add account info</a>
+      <a class="dropdown-item" data-toggle="modal" href="#createaccount">Edit category</a>
+      <a class="dropdown-item" style="color:red;" data-toggle="modal" href="#createaccount">Remove from stack</a>
+    </div>
+</div>
+            
+                <div class="card border-success shadow text-success p-3 my-card"><img class="lib-img-show" src="https://pentagram-production.imgix.net/bf71f972-52fd-4432-abed-96685edf8e9c/ps_houzz_01.png?crop=edges&fit=crop&h=630&rect=31%2C0%2C12450%2C7793&w=1200" alt="HTML tutorial" style="width:25px;height:25px;"></div>
                 <br>
-                <br>
+               
+                   <div class="text-success text-center mt-2"><h4>houzz</h4></div>
+                <div class="text-success text-center mt-2"><p>Use houzz my business to control you online google presence</p>   
+          
               
-              <!-- note pad open button -->
-  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#business">
-    Open
-  </button>
-               </div> 
-                
+              
+              
+              <button onclick="houzz()" class="btn btn-primary" role="button" data-toggle="modal" data-target="#screencover">Open</button>
+         
+          
+           
                 </div>
-            </div>  
+            </div>
+        </div>
+        
+        
+        
+    
+    
+    
+    <!-- End house card -->
         
         
         
@@ -862,7 +905,7 @@ Jump to boards
             <div class="card border-warning mx-sm-1 p-3 bg-warning">
                 <div class="card border-warning shadow text-warning p-3 my-card" ><span class="fa fa-plus" aria-hidden="true"></span></div>
                 <div class="text-white text-center mt-3"><h4>Add</h4></div>
-                <div class="text-white text-center mt-2"><p>Add more to this stack or add more categories to your board</p>
+                <div class="text-white text-center mt-2"><p>Add to this stack or add another stack category to your board</p>
                 
               
               <!-- note pad open button -->
@@ -876,7 +919,7 @@ Jump to boards
         
 
      
-            
+        
             
             
             
@@ -894,7 +937,7 @@ Jump to boards
      
      <br>
  
-     
+     <hr>
    <!------ start tools --->
      <div id="test">
      
@@ -902,50 +945,471 @@ Jump to boards
    <br>
      
     
-<div class="row w-100">
+      <div class="row w-100">
+      <!-- google my business card-->
         <div class="col-md-3">
-            <div class="card border-info mx-sm-1 p-3">
-                <div class="card border-info shadow text-info p-3 my-card" ><span class="fa fa-globe" aria-hidden="true"></span></div>
-                <div class="text-info text-center mt-3"><h4>Web</h4></div>
-                <div class="text-info text-center mt-2"><p>Websites that can be used for business, landing pages, blog, and more</p>
+            <div class="card border-success mx-sm-1 p-3">
+            
+            <div class="dropdown">
+            
+            <i class="fa fa-ellipsis-h" aria-hidden="true" data-toggle="dropdown" style="float: right;"></i>
     
-
- <!-- note pad open button -->
-  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ignitia">
-    Open 
-  </button>
-
-
-
-
-       
+    <div class="dropdown-menu">
+      <a class="dropdown-item" data-toggle="modal" href="#accountinfo">Add account info</a>
+      <a class="dropdown-item" data-toggle="modal" href="#createaccount">Edit category</a>
+      <a class="dropdown-item" style="color:red;" data-toggle="modal" href="#createaccount">Remove from stack</a>
+    </div>
+</div>
+            
+                <div class="card border-success shadow text-success p-3 my-card"><img class="lib-img-show" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/1200px-Google_%22G%22_logo.svg.png" alt="HTML tutorial" style="width:25px;height:25px;"></div>
+                <br>
+               
+                   <div class="text-success text-center mt-2"><h4>Google my business</h4></div>
+                <div class="text-success text-center mt-2"><p>Use google my business to control you online google presence</p>   
+          
+              
+              
+              
+              <button onclick="gmb()" class="btn btn-primary" role="button" data-toggle="modal" data-target="#screencover">Open</button>
+         
+          
+           
                 </div>
             </div>
         </div>
-         
-     
-     
-    <div class="col-md-3">
-            <div class="card border-info mx-sm-1 p-3">
-                <div class="card border-info shadow text-info p-3 my-card" ><span class="fa fa-globe" aria-hidden="true"></span></div>
-                <div class="text-info text-center mt-3"><h4>Web</h4></div>
-                <div class="text-info text-center mt-2"><p>Websites that can be used for business, landing pages, blog, and more</p>
-    
-
- <!-- note pad open button -->
-  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ignitia">
-    Open 
-  </button>
-
-
-
-
+        
+        
+        <!-- end google my business card-->
+        
        
+        
+    <!-- start angi card -->
+     <div class="col-md-3">
+            <div class="card border-success mx-sm-1 p-3">
+            
+            <div class="dropdown">
+            
+            <i class="fa fa-ellipsis-h" aria-hidden="true" data-toggle="dropdown" style="float: right;"></i>
+    
+    <div class="dropdown-menu">
+      <a class="dropdown-item" data-toggle="modal" href="#accountinfo">Add account info</a>
+      <a class="dropdown-item" data-toggle="modal" href="#createaccount">Edit category</a>
+      <a class="dropdown-item" style="color:red;" data-toggle="modal" href="#createaccount">Remove from stack</a>
+    </div>
+</div>
+            
+                <div class="card border-success shadow text-success p-3 my-card"><img class="lib-img-show" src="https://logosandtypes.com/wp-content/uploads/2021/04/Angi.png" alt="HTML tutorial" style="width:25px;height:25px;"></div>
+                <br>
+               
+                   <div class="text-success text-center mt-2"><h4>Angi</h4></div>
+                <div class="text-success text-center mt-2"><p>Use Angi my business to control you online google presence</p>   
+          
+              
+              
+              
+              <button onclick="angi()" class="btn btn-primary" role="button" data-toggle="modal" data-target="#screencover">Open</button>
+         
+          
+           
                 </div>
             </div>
-        </div> 
+        </div>
+        
+        
+        
+    
+    <!--END angi card-->
+        
+        
+    <!-- start houzz card-->
+    
+    
+     <div class="col-md-3">
+            <div class="card border-success mx-sm-1 p-3">
+            
+            <div class="dropdown">
+            
+            <i class="fa fa-ellipsis-h" aria-hidden="true" data-toggle="dropdown" style="float: right;"></i>
+    
+    <div class="dropdown-menu">
+      <a class="dropdown-item" data-toggle="modal" href="#accountinfo">Add account info</a>
+      <a class="dropdown-item" data-toggle="modal" href="#createaccount">Edit category</a>
+      <a class="dropdown-item" style="color:red;" data-toggle="modal" href="#createaccount">Remove from stack</a>
+    </div>
+</div>
+            
+                <div class="card border-success shadow text-success p-3 my-card"><img class="lib-img-show" src="https://pentagram-production.imgix.net/bf71f972-52fd-4432-abed-96685edf8e9c/ps_houzz_01.png?crop=edges&fit=crop&h=630&rect=31%2C0%2C12450%2C7793&w=1200" alt="HTML tutorial" style="width:25px;height:25px;"></div>
+                <br>
+               
+                   <div class="text-success text-center mt-2"><h4>houzz</h4></div>
+                <div class="text-success text-center mt-2"><p>Use houzz my business to control you online google presence</p>   
+          
+              
+              
+              
+              <button onclick="houzz()" class="btn btn-primary" role="button" data-toggle="modal" data-target="#screencover">Open</button>
+         
+          
+           
+                </div>
+            </div>
+        </div>
+        
+        
+        
+    
+    
+    
+    <!-- End house card -->
+        
+        
+        
+        
+        
+          
      
+       
+          
+            
+    
+          
+          
+          
+                        <div class="col-md-3">
+            <div class="card border-danger mx-sm-1 p-3">
+                <div class="card border-danger shadow text-danger p-3 my-card" ><span class="fa fa-play" aria-hidden="true"></span></div>
+                <div class="text-danger text-center mt-3"><h4>Video</h4></div>
+                <div class="text-danger text-center mt-2"><p>Upload videos</p>
+                <br>
+            <br>
+          <!-- note pad open button -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#video">
+    Open
+  </button>
+                </div>
+            </div>
+        </div>
+        </div>
+       <p style="color:transparent;">d</p>
+
+    <div class="row2">
+    
+       <div class="row w-100">
+        <div class="col-md-3">
+        
+            <div class="card border-warning mx-sm-1 p-3">
+                <div class="card border-warning shadow text-warning p-3 my-card" ><span class="fa fa-briefcase" aria-hidden="true"></span></div>
+                <div class="text-warning text-center mt-3"><h4>Business sites</h4></div>
+                <div class="text-warning text-center mt-2"><p>Build a business presence</p>
+                <br>
+                <br>
+              
+              <!-- note pad open button -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#business">
+    Open
+  </button>
+               </div> 
+                </div>
+                </div>
+          
+            
+            
+            
+            
+         <div class="col-md-3">
+         
+            <div class="card border-danger mx-sm-1 p-3">
+                <div class="card border-danger shadow text-danger p-3 my-card" ><span class="fa fa-play" aria-hidden="true"></span></div>
+               
+                <div class="text-danger text-center mt-3"><h4>Video</h4></div>
+                <div class="text-danger text-center mt-2"><p>Upload videos</p>
+                <br>
+                <br>
+            
+           
+           
+          <!-- note pad open button -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#video">
+    Open
+  </button>
+                </div>
+            </div>
+        </div>    
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+       
+            
+            
+            
+            
+            <div class="col-md-3">
+           
+       
+            <div class="card border-warning mx-sm-1 p-3 bg-warning">
+                <div class="card border-warning shadow text-warning p-3 my-card" ><span class="fa fa-plus" aria-hidden="true"></span></div>
+                <div class="text-white text-center mt-3"><h4>Add</h4></div>
+                <div class="text-white text-center mt-2"><p>Add to this stack or add another stack category to your board</p>
+                
+              
+              <!-- note pad open button -->
+  <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#business">
+    Add
+  </button>
+               </div> 
+                
+                </div>
+            </div> 
+            </div>
+           
      
+   <br>
+   <hr>
+   <div id="more">
+   <h3>more</h3>
+   
+         <div class="row w-100">
+      <!-- google my business card-->
+        <div class="col-md-3">
+            <div class="card border-success mx-sm-1 p-3">
+            
+            <div class="dropdown">
+            
+            <i class="fa fa-ellipsis-h" aria-hidden="true" data-toggle="dropdown" style="float: right;"></i>
+    
+    <div class="dropdown-menu">
+      <a class="dropdown-item" data-toggle="modal" href="#accountinfo">Add account info</a>
+      <a class="dropdown-item" data-toggle="modal" href="#createaccount">Edit category</a>
+      <a class="dropdown-item" style="color:red;" data-toggle="modal" href="#createaccount">Remove from stack</a>
+    </div>
+</div>
+            
+                <div class="card border-success shadow text-success p-3 my-card"><img class="lib-img-show" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/1200px-Google_%22G%22_logo.svg.png" alt="HTML tutorial" style="width:25px;height:25px;"></div>
+                <br>
+               
+                   <div class="text-success text-center mt-2"><h4>Google my business</h4></div>
+                <div class="text-success text-center mt-2"><p>Use google my business to control you online google presence</p>   
+          
+              
+              
+              
+              <button onclick="gmb()" class="btn btn-primary" role="button" data-toggle="modal" data-target="#screencover">Open</button>
+         
+          
+           
+                </div>
+            </div>
+        </div>
+        
+        
+        <!-- end google my business card-->
+        
+       
+        
+    <!-- start angi card -->
+     <div class="col-md-3">
+            <div class="card border-success mx-sm-1 p-3">
+            
+            <div class="dropdown">
+            
+            <i class="fa fa-ellipsis-h" aria-hidden="true" data-toggle="dropdown" style="float: right;"></i>
+    
+    <div class="dropdown-menu">
+      <a class="dropdown-item" data-toggle="modal" href="#accountinfo">Add account info</a>
+      <a class="dropdown-item" data-toggle="modal" href="#createaccount">Edit category</a>
+      <a class="dropdown-item" style="color:red;" data-toggle="modal" href="#createaccount">Remove from stack</a>
+    </div>
+</div>
+            
+                <div class="card border-success shadow text-success p-3 my-card"><img class="lib-img-show" src="https://logosandtypes.com/wp-content/uploads/2021/04/Angi.png" alt="HTML tutorial" style="width:25px;height:25px;"></div>
+                <br>
+               
+                   <div class="text-success text-center mt-2"><h4>Angi</h4></div>
+                <div class="text-success text-center mt-2"><p>Use Angi my business to control you online google presence</p>   
+          
+              
+              
+              
+              <button onclick="angi()" class="btn btn-primary" role="button" data-toggle="modal" data-target="#screencover">Open</button>
+         
+          
+           
+                </div>
+            </div>
+        </div>
+        
+        
+        
+    
+    <!--END angi card-->
+        
+        
+    <!-- start houzz card-->
+    
+    
+     <div class="col-md-3">
+            <div class="card border-success mx-sm-1 p-3">
+            
+            <div class="dropdown">
+            
+            <i class="fa fa-ellipsis-h" aria-hidden="true" data-toggle="dropdown" style="float: right;"></i>
+    
+    <div class="dropdown-menu">
+      <a class="dropdown-item" data-toggle="modal" href="#accountinfo">Add account info</a>
+      <a class="dropdown-item" data-toggle="modal" href="#createaccount">Edit category</a>
+      <a class="dropdown-item" style="color:red;" data-toggle="modal" href="#createaccount">Remove from stack</a>
+    </div>
+</div>
+            
+                <div class="card border-success shadow text-success p-3 my-card"><img class="lib-img-show" src="https://pentagram-production.imgix.net/bf71f972-52fd-4432-abed-96685edf8e9c/ps_houzz_01.png?crop=edges&fit=crop&h=630&rect=31%2C0%2C12450%2C7793&w=1200" alt="HTML tutorial" style="width:25px;height:25px;"></div>
+                <br>
+               
+                   <div class="text-success text-center mt-2"><h4>houzz</h4></div>
+                <div class="text-success text-center mt-2"><p>Use houzz my business to control you online google presence</p>   
+          
+              
+              
+              
+              <button onclick="houzz()" class="btn btn-primary" role="button" data-toggle="modal" data-target="#screencover">Open</button>
+         
+          
+           
+                </div>
+            </div>
+        </div>
+        
+        
+        
+    
+    
+    
+    <!-- End house card -->
+        
+        
+        
+        
+        
+          
+     
+       
+          
+            
+    
+          
+          
+          
+                        <div class="col-md-3">
+            <div class="card border-danger mx-sm-1 p-3">
+                <div class="card border-danger shadow text-danger p-3 my-card" ><span class="fa fa-play" aria-hidden="true"></span></div>
+                <div class="text-danger text-center mt-3"><h4>Video</h4></div>
+                <div class="text-danger text-center mt-2"><p>Upload videos</p>
+                <br>
+            <br>
+          <!-- note pad open button -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#video">
+    Open
+  </button>
+                </div>
+            </div>
+        </div>
+        </div>
+       <p style="color:transparent;">d</p>
+
+    <div class="row2">
+    
+       <div class="row w-100">
+        <div class="col-md-3">
+        
+            <div class="card border-warning mx-sm-1 p-3">
+                <div class="card border-warning shadow text-warning p-3 my-card" ><span class="fa fa-briefcase" aria-hidden="true"></span></div>
+                <div class="text-warning text-center mt-3"><h4>Business sites</h4></div>
+                <div class="text-warning text-center mt-2"><p>Build a business presence</p>
+                <br>
+                <br>
+              
+              <!-- note pad open button -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#business">
+    Open
+  </button>
+               </div> 
+                </div>
+                </div>
+          
+            
+            
+            
+            
+         <div class="col-md-3">
+         
+            <div class="card border-danger mx-sm-1 p-3">
+                <div class="card border-danger shadow text-danger p-3 my-card" ><span class="fa fa-play" aria-hidden="true"></span></div>
+               
+                <div class="text-danger text-center mt-3"><h4>Video</h4></div>
+                <div class="text-danger text-center mt-2"><p>Upload videos</p>
+                <br>
+                <br>
+            
+           
+           
+          <!-- note pad open button -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#video">
+    Open
+  </button>
+                </div>
+            </div>
+        </div>    
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+       
+            
+            
+            
+            
+            <div class="col-md-3">
+           
+       
+            <div class="card border-warning mx-sm-1 p-3 bg-warning">
+                <div class="card border-warning shadow text-warning p-3 my-card" ><span class="fa fa-plus" aria-hidden="true"></span></div>
+                <div class="text-white text-center mt-3"><h4>Add</h4></div>
+                <div class="text-white text-center mt-2"><p>Add to this stack or add another stack category to your board</p>
+                
+              
+              <!-- note pad open button -->
+  <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#business">
+    Add
+  </button>
+               </div> 
+                
+                </div>
+            </div>
+   
+   </div>
+   </div>
+   </div>
+  
+   
+   
      
      
      
@@ -1067,14 +1531,14 @@ function tumblr() {
   
   
        
- <!-- marketing modal -->
-  <div class="modal" id="marketing">
+ <!-- More stacks modal -->
+  <div class="modal" id="morestacks">
     <div class="modal-dialog">
       <div class="modal-content">
       
         <!-- Modal Header -->
         <div class="modal-header">
-          <h4 class="modal-title">Marketing</h4>
+          <h4 class="modal-title">More stack catagories</h4>
       
           
         </div>
@@ -1086,76 +1550,21 @@ function tumblr() {
 
    
    
-   <div class="row row-margin-bottom">
-   
-            <div class="col-auto no-padding lib-item" data-category="view">
-                <div class="lib-panel">
-                    <div class="row box-shadow">
-                        <div class="col-auto">
-                            <img class="lib-img-show" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShfk5hSTQjlimrTT-QYUjmujtmF8bZdhZFxJM0jU_lsSWP-gq6buif4yCsrnpIDyVE4Rc&usqp=CAU" alt="HTML tutorial" style="width:100px;height:100px;">
-                        </div>
-                        <div class="col-auto">
-                            <div class="lib-row lib-header h5">
-                                Tumblr
-                                <div class="lib-header-seperator"></div>
-                            </div>
-                            <div class="lib-row lib-desc">
-                                tumblr is a micro blogging platform<br><br>
-                                
-                         <button onclick="tumblr()">Try it</button>
-
-<script>
-function tumblr() {
-  window.open("https://www.w3schools.com", "_blank", "toolbar=no,scrollbars=yes,resizable=yes,top=50,left=150,width=1000,height=600");
-}
-</script>       
-                                
-                                
-                                
-                                
-                                <button onclick="tumblr()" class="btn btn-info" role="button">Open</button>
-                                <a href="#">Take a tour</a>
-                                
-                            </div>
-           
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-   </div>
+  
+    <a href="#" type="button" class="btn btn-primary btn-lg "  data-target="#marketing"><i class="fa fa-bullhorn"></i>
+    Marketing & design
+  </a> 
  <hr style="height:2px;border-width:0;color:grey;background-color:grey">
  
  
  
  
  
-   <div class="row row-margin-bottom">
-   
-            <div class="col-auto no-padding lib-item" data-category="view">
-                <div class="lib-panel">
-                    <div class="row box-shadow">
-                        <div class="col-auto">
-                            <img class="lib-img-show" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/WordPress_blue_logo.svg/1024px-WordPress_blue_logo.svg.png" alt="HTML tutorial" style="width:100px;height:100px;">
-                        </div>
-                        <div class="col-auto">
-                            <div class="lib-row lib-header h5">
-                                Wordpress
-                                <div class="lib-header-seperator"></div>
-                            </div>
-                            <div class="lib-row lib-desc">
-                                Wordpress is a blogging platform<br><br>
-                                <a href="#" class="btn btn-info" role="button">Open</a>
-                                <a href="#">Take a tour</a>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-   </div>
+ <a href="#" type="button" class="btn btn-primary btn-lg "  data-target="#marketing"><i class="fa fa-bullhorn"></i>
+    Marketing & design
+  </a> 
  <hr style="height:2px;border-width:0;color:gray;background-color:gray">
- <center>More sites coming soon</center>
+ <center><a href="#">Add or create more</a></center>
  
  
        
@@ -1170,7 +1579,7 @@ function tumblr() {
   
 </div>
      
-  <!-- END marketing modal --> 
+  <!-- END more stacks modal --> 
   
   
   
@@ -1243,6 +1652,67 @@ function tumblr() {
   </div>
   <!---end account info modal-->
   
+  
+  
+  
+  
+  <!-- The Modal more -->
+  <div class="modal" id="tools">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">More tools</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+        <div class="container">
+  more
+  <!-- note pad open button -->
+  <button type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#notepad"><i class="fa fa-sticky-note-o"></i>
+    Note pad
+  </button>
+  
+  <!-- note pad open button -->
+  <button type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#game1"><i class="fa fa-sticky-note-o"></i>
+    Note pad2
+  </button>
+  
+
+
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+</div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   <!-- Sign in warning -->
   <div class="modal" id="accountinfo">
     <div class="modal-dialog modal-xl">
@@ -1288,12 +1758,21 @@ function tumblr() {
   
   
   
+  
+  
 
+  
+  
   
   </div>
   </div>
   </div>
   </div>
+  
+  
+
+  
+  
   
   
   
@@ -1600,6 +2079,17 @@ document.addEventListener("DOMContentLoaded",
 <script>
 function gmb() {
   window.open("https://google.com", "_blank", "toolbar=no,scrollbars=yes,resizable=yes,top=160,left=200,width=1000,height=500");
+  
+}
+
+function angi() {
+  window.open("https://angi.com", "_blank", "toolbar=no,scrollbars=yes,resizable=yes,top=160,left=200,width=1000,height=500");
+  
+}
+
+function houzz() {
+  window.open("https://houzz.com", "_blank", "toolbar=no,scrollbars=yes,resizable=yes,top=160,left=200,width=1000,height=500");
+  
 }
 </script>
 
